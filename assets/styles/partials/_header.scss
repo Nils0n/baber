@@ -1,0 +1,56 @@
+header{
+    width: 100%;
+
+    .header-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+  
+
+    .header-icons{
+        display: flex;
+        gap:0.875rem;
+
+        i {
+            color: $white-normal;
+        }
+
+         i:hover{
+            animation: translateY 0.8s infinite alternate;
+            color:$red-light;
+        }
+    }
+
+    .header-button{
+        border:1px solid $white-normal;
+        padding: 0.5rem 1.5rem;
+        border-radius: 4px;
+        color: $white-normal;
+        background-color: transparent;
+        transition: background-color 0.8s;
+
+        &:hover{
+            border: 1px solid $red-light;
+            background-color: $red-light;
+        }
+    }
+
+    .header-logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+@keyframes translateY {
+    from {
+        transform: translateY(0) scale(1);
+    }
+
+    to{
+        transform: translateY(-8px) scale(1.1);
+    }
+}
