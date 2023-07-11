@@ -72,6 +72,7 @@ header .header-logo {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 8px;
 }
 
 .bg-home {
@@ -93,6 +94,62 @@ header .header-logo {
   opacity: 0.9;
 }
 
+.hero {
+  color: #ffffff;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.142rem;
+}
+.hero h1 {
+  text-align: center;
+  line-height: 150%;
+  max-width: 940px;
+  font-size: 2.5rem;
+}
+.hero p {
+  text-align: center;
+  margin: 0.875rem 0;
+}
+.hero .button-contact {
+  padding: 0.875rem 1.75rem;
+  color: #ffffff;
+  background-color: #d94140;
+  border: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0.875rem 0;
+  animation: scaleButton 0.8s infinite alternate;
+}
+
+@keyframes scaleButton {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.07);
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    min-height: 60vh;
+  }
+  .hero h1 {
+    font-size: 2rem;
+    padding: 0 0.875rem;
+    width: 100%;
+  }
+  .hero p {
+    font-size: 0.75rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+}
 body {
   font-family: "Sora", sans-serif;
   width: 100%;
