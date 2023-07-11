@@ -7,8 +7,6 @@ header{
         justify-content: space-between;
     }
 
-  
-
     .header-icons{
         display: flex;
         gap:0.875rem;
@@ -52,5 +50,28 @@ header{
 
     to{
         transform: translateY(-8px) scale(1.1);
+    }
+}
+
+
+@media screen and (max-width:768px){
+    .header-content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        i{
+            margin-top: 1rem;
+            font-size: 2.125rem;
+        }
+    }
+
+    .header-logo img{
+        width: 10rem;
+        margin-top:2.875rem ;
+    }
+
+    .header-button{
+        display: none;
     }
 }
