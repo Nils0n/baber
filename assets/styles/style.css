@@ -124,6 +124,33 @@ header .header-logo {
   animation: scaleButton 0.8s infinite alternate;
 }
 
+.about {
+  background-color: #06121e;
+  overflow: hidden;
+  color: #ffffff;
+}
+.about .about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.875rem;
+  padding: 34px 14px 64px;
+}
+.about .about-content div {
+  flex: 1;
+}
+.about .about-content img {
+  max-width: 35.625rem;
+}
+.about .about-description h2 {
+  font-size: 2.375rem;
+  margin-bottom: 1.5rem;
+}
+.about .about-description p {
+  margin-bottom: 0.875rem;
+  line-height: 150%;
+}
+
 @keyframes scaleButton {
   from {
     transform: scale(1);
@@ -143,6 +170,9 @@ header .header-logo {
   }
   .hero p {
     font-size: 0.75rem;
+  }
+  .about-content {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 480px) {
