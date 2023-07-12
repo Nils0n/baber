@@ -226,6 +226,38 @@ footer {
   color: #ffffff;
 }
 
+.btn-whastsapp {
+  position: fixed;
+  bottom: 0.875rem;
+  right: 1.5rem;
+  z-index: 99;
+}
+.btn-whastsapp img {
+  max-width: 4.625rem;
+  transition: transform 0.4s;
+}
+.btn-whastsapp img:hover {
+  transform: scale(1.1);
+}
+.btn-whastsapp span {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  width: 7.5rem;
+  top: 0.5rem;
+  left: -8rem;
+  color: #ffffff;
+  background-color: #232224;
+  padding: 4px;
+  border-radius: 8px;
+  text-align: center;
+  transition: opacity 0.4s;
+}
+.btn-whastsapp:hover span {
+  visibility: visible;
+  opacity: 1;
+}
+
 @keyframes scaleButton {
   from {
     transform: scale(1);
@@ -252,6 +284,9 @@ footer {
   }
   .haircuts img {
     max-width: 46.25rem;
+  }
+  .btn-whastsapp img {
+    max-width: 4rem;
   }
 }
 @media screen and (max-width: 480px) {

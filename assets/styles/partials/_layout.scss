@@ -184,9 +184,47 @@ footer{
     gap:1.5rem;
     color: $white-normal;
 
-    
+
 }
 
+.btn-whastsapp{
+    position: fixed;
+    bottom: 0.875rem;
+    right: 1.5rem;
+    z-index: 99;
+
+    img{
+        max-width: 4.625rem;
+        transition: transform 0.4s;
+    }
+
+    img:hover{
+        transform: scale(1.1);
+    }
+
+    span{
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        width: 7.5rem;
+        top: 0.5rem;
+        left: -8rem;
+        color:$white-normal;
+        background-color: $black-normal;
+        padding: 4px;
+        border-radius: 8px;
+        text-align: center;
+        transition: opacity 0.4s;
+    }
+
+    &:hover span{
+        visibility: visible;
+        opacity: 1;
+        
+
+    }
+
+}
 
 @keyframes scaleButton{
     from{
@@ -220,6 +258,12 @@ footer{
 
     .haircuts img{
         max-width: 46.25rem;
+    }
+
+    .btn-whastsapp{
+        img{
+            max-width: 4rem;
+        }
     }
 }
 
