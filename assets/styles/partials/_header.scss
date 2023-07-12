@@ -7,19 +7,7 @@ header{
         justify-content: space-between;
     }
 
-    .header-icons{
-        display: flex;
-        gap:0.875rem;
-
-        i {
-            color: $white-normal;
-        }
-
-         i:hover{
-            animation: translateY 0.8s infinite alternate;
-            color:$red-light;
-        }
-    }
+  
 
     .header-button{
         border:1px solid $white-normal;
@@ -40,6 +28,20 @@ header{
         align-items: center;
         justify-content: center;
         margin-top: 10px;
+    }
+}
+
+.header-icons{
+    display: flex;
+    gap:0.875rem;
+
+    i {
+        color: $white-normal;
+     }
+
+    i:hover{
+        animation: translateY 0.8s infinite alternate;
+        color:$red-light;
     }
 }
 
