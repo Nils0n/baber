@@ -183,6 +183,7 @@ footer{
     padding: 3.375rem 0;
     gap:1.5rem;
     color: $white-normal;
+    text-align: center;
 
 
 }
@@ -264,6 +265,13 @@ footer{
         img{
             max-width: 4rem;
         }
+    }
+}
+
+.logo{
+    img{
+        width: 12rem;
+        height: 12rem;
     }
 }
 

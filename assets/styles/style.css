@@ -224,6 +224,7 @@ footer {
   padding: 3.375rem 0;
   gap: 1.5rem;
   color: #ffffff;
+  text-align: center;
 }
 
 .btn-whastsapp {
@@ -289,6 +290,11 @@ footer {
     max-width: 4rem;
   }
 }
+.logo img {
+  width: 12rem;
+  height: 12rem;
+}
+
 @media screen and (max-width: 480px) {
   .hero h1 {
     font-size: 1.5rem;
